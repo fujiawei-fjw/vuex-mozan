@@ -10,23 +10,23 @@ Vue.use(VueRouter);
 export default new VueRouter({
   routes: [
     {
-      path: PUBLICURL,
+      path: PUBLICURL + "/",
       component: Home
     },
     {
-      path: `${PUBLICURL}pay`,
+      path: PUBLICURL + "/pay",
       component: Pay
     },
     {
-      path: `${PUBLICURL}shopcart`,
+      path: PUBLICURL + "/shopcart",
       component: ShopCart
     },
     {
-      path: `${PUBLICURL}fillIn`,
+      path: PUBLICURL + "/fillIn",
       component: FillIn
     },
     {
-      path: `${PUBLICURL}cashier`,
+      path: PUBLICURL + "cashier",
       component: Cashier
     }
   ],
