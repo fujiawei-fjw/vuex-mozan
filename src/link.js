@@ -1,2 +1,2 @@
-const PUBLICURL = "/vuex-mozan";
+const PUBLICURL = "/vue-mozan";
 export default PUBLICURL;
