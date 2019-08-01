@@ -30,5 +30,5 @@ export default new VueRouter({
       component: Cashier
     }
   ],
-  mode: "history"
+  mode: "hash"
 });
