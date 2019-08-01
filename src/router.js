@@ -14,7 +14,7 @@ export default new VueRouter({
       component: Home
     },
     {
-      path: `${PUBLICURL}pay`,
+      path: "/pay",
       component: Pay
     },
     {
