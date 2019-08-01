@@ -5,7 +5,7 @@ import Pay from "./components/Pay.vue";
 import ShopCart from "./components/ShopCart.vue";
 import FillIn from "./components/FillIn.vue";
 import Cashier from "./components/Cashier.vue";
-import PUBLICURL from "./link";
+import PUBLICURL from "../constants";
 Vue.use(VueRouter);
 export default new VueRouter({
   routes: [
@@ -30,5 +30,5 @@ export default new VueRouter({
       component: Cashier
     }
   ],
-  mode: "hash"
+  mode: "history"
 });
