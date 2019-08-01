@@ -1,28 +1,36 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <Header />
+    <div class="scetion">
+      <router-view></router-view>
+    </div>
+    <Footer />
   </div>
 </template>
-
+ 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    Header,
+    Footer
+  },
+  mounted() {
+    this.$router.afterEach((to, from, next) => {
+      window.scrollTo(0, 0);
+    });
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.app {
+  user-select: none;
+  position: relative;
+}
+.app > .scetion {
+  background-image: url("./assets/images/bg.jpg");
 }
 </style>
